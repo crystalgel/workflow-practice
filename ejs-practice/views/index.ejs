@@ -1,0 +1,13 @@
+      <h1><%= title %></h1>
+      <!-- <% var x = 11 %>
+      <% if(x > 10) { %> -->
+      <p><%= message %></p>
+      <!-- <% } %> -->
+
+      <ul>
+        <% users.forEach(function(u){ %>
+          <li><%= u.name %> | <%= u.email %></li>
+        <% }) %>
+        <!-- forEach takes one argument the first of which is the first element of the array; anonymous function
+      1st time loop runs index 0, 2nd will be 1, etc -->
+      </ul>

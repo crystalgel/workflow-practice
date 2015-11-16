@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" type= "text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type= "text/css" href="/assets/css/styles.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js">
+    </script>
+    <script type = "text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    </script>
+  </head>
+  <body>
+    <% include ./partials/header %>
+    <!-- what yield tag did in rails  -->
+    <div class="container">
+        <%- body%>
+        <!-- like the yield... everything in it will be from index view (don't need to include partials for body) -->
+        <!-- everything specific to the view will get rendered where it appears  -->
+    </div>
+
+    <% include ./partials/footer %>
+  </body>
+</html>
